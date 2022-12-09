@@ -15,11 +15,7 @@ apples : целочисленный массив, расстояния, на к�
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
     // Write your code here
     const filterCurrentLocation = (arr) => {
-        return arr.filter(el => {
-            if(el >= s && el <= t) {
-                return el
-            }
-        })
+        return arr.filter(el => el >= s && el <= t)
     }
     const locationApples = apples.map(el => a + el)
     const locationOranges = oranges.map(el => b + el)
